@@ -1,0 +1,888 @@
+<html class="o-mod-touch">
+
+<head>
+    <link rel="stylesheet" href="Ovindu.css">
+    <title>Ovindu Atukorala - Technology and Finance Enthusiast</title>
+    <meta name="description"
+        content="Welcome to my personal website! I'm Ovindu Atukorala, a technology and finance enthusiast. Here you'll find my thoughts and insights on the latest tech and finance trends.">
+    <meta name="keywords" content="Ovindu Atukorala, technology, finance, enthusiast, insights, trends">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="global-styles w-embed">
+            <style>
+                /* Get rid of top margin on first element in any rich text element */
+                .w-richtext> :not(div):first-child,
+                .w-richtext>div:first-child> :first-child {
+                    margin-top: 0 !important;
+                }
+
+                /* Get rid of bottom margin on last element in any rich text element */
+                .w-richtext>:last-child,
+                .w-richtext ol li:last-child,
+                .w-richtext ul li:last-child {
+                    margin-bottom: 0 !important;
+                }
+
+                /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+                /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+                /* Prevent all click and hover interaction with an element */
+                .pointer-events-off {
+                    pointer-events: none;
+                }
+
+                /* Enables all click and hover interaction with an element */
+                .pointer-events-on {
+                    pointer-events: auto;
+                }
+
+                /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+                .div-square::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+
+                /*Hide focus outline for main content element*/
+                main:focus-visible {
+                    outline: -webkit-focus-ring-color auto 0px;
+                }
+
+                /* Make sure containers never lose their center alignment*/
+                .container-medium,
+                .container-small,
+                .container-large {
+                    margin-right: auto !important;
+                    margin-left: auto !important;
+                }
+
+                /*Reset selects, buttons, and links styles*/
+                .w-input,
+                .w-select,
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                    font-size: inherit;
+                }
+
+                /*Apply "..." after 3 lines of text */
+                .text-style-3lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+
+                /* Apply "..." after 2 lines of text */
+                .text-style-2lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                /* Apply "..." at 100% width */
+                .truncate-width {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                /* Removes native scrollbar */
+                .no-scrollbar {
+                    -ms-overflow-style: none;
+                    /* // IE 10+ overflow: -moz-scrollbars-none;
+                        // Firefox  */
+                }
+
+                .no-scrollbar :-webkit-scrollbar {
+                    display: none;
+                    /* // Safari and Chrome  */
+                }
+
+                /* Adds inline flex display */
+                .display-inlineflex {
+                    display: inline-flex;
+                }
+
+                /* These classes are never overwritten */
+                .hide {
+                    display: none !important;
+                }
+
+                @media screen and (max-width: 991px) {
+
+                    .hide,
+                    .hide-tablet {
+                        display: none !important;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    .hide-mobile-landscape {
+                        display: none !important;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    .hide-mobile {
+                        display: none !important;
+                    }
+                }
+
+                .margin-0 {
+                    margin: 0rem !important;
+                }
+
+                .padding-0 {
+                    padding: 0rem !important;
+                }
+
+                .spacing-clean {
+                    padding: 0rem !important;
+                    margin: 0rem !important;
+                }
+
+                .margin-top {
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-top {
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-right {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-right {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-bottom {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-bottom {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-left {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
+
+                .padding-left {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
+
+                .margin-horizontal {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
+
+                .padding-horizontal {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
+
+                .margin-vertical {
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-vertical {
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                /* Scale text with Screensize */
+                html {
+                    font-size: 1rem;
+                }
+
+                @media screen and (min-width: 1600px) {
+                    html {
+                        font-size: calc(16px + 16 * ((100vw - 1600px) / 1600));
+                    }
+                }
+
+                @media screen and (min-width: 3200px) {
+                    html {
+                        font-size: 32px;
+                    }
+                }
+            </style>
+        </div>
+        <main class="main-wrapper">
+            <div class="fixed-background background-gradient">
+                <div class="fixed-background_blur"></div>
+            </div>
+        </main>
+        <div class="navigation o-nav" data-animation="default" data-easing2="ease" fs-scrolldisable-element="smart-nav"
+            data-easing="ease" data-collapse="medium" data-w-id="5c50dda3-8efb-549a-af72-19dc2881193f" role="banner"
+            data-duration="400">
+            <div class="navigation_container">
+                <a href="/" aria-current="page" class="navigation_logo o-nav-brand o--current">
+                    <div class="heading-style-h5">Ovindu Atukorala</div>
+                    <!-- <div>Business Developer</div> -->
+                </a>
+                <nav role="navigation" id="navbar" class="navigation_menu is-page-height-tablet o-nav-menu">
+                    <a href="#section-introduction" class="navigation_link o-nav-link">introduction</a>
+                    <a href="#section-about" class="navigation_link o-nav-link">about</a>
+                    <a href="#section-service" class="navigation_link o-nav-link">qualifications</a>
+                    <a href="#section-experience" class="navigation_link o-nav-link">experience</a>
+                    <a href="#section-skills" class="navigation_link o-nav-link">Skills</a>
+                    <a href="#section-contact" class="navigation_link o-nav-link">contact</a>
+                </nav>
+                <div style="-ms-grid-column-align: end;
+                    justify-self: end;" class="navigation_button-wrapper">
+                    <div class="scroll-visual-grid">
+                        <div class="scroll-visual">
+                            <div class="scroll-visual_scroller">
+                            </div>
+                        </div>
+                        <div class="scroll-visual-text">Scroll</div>
+                    </div>
+                    <div class="navbar2_menu-button o-nav-button">
+                        <div class="menu-icon2">
+                            <div class="menu-icon2_line-top"></div>
+                            <div class="menu-icon2_line-middle">
+                                <div class="menu-icon_line-middle-inner"></div>
+                            </div>
+                            <div class="menu-icon2_line-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="image" class="protrait-fixed">
+            <div id="image-wrapper" class="protrait-wrapper">
+                <img src="RU1_6666 copy.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 20vw"
+                    srcset="RU1_6666 copy.jpg 500w, RU1_6666 copy.jpg 800w, RU1_6666 copy.jpg 1080w, RU1_6666 copy.jpg 1200w"
+                    alt="" class="image" />
+                <div class="protrait-background"></div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content-wrapper" class="main-content-wrapper">
+            <div class="main-content-header-wrap">
+                <div class="main-content-header">
+                    <!-- <a href="#" class="button is-link w-button">download my cv</a> -->
+                    <a href="https://www.linkedin.com/in/ovindu/" class="sm-button"><i
+                            class="fa-brands fa-linkedin sm-icon"></i></a>
+                    <a href="https://twitter.com/OvinduA" class="sm-button"><i
+                            class="fa-brands fa-twitter sm-icon"></i></a>
+                    <a href="tel:+94716256495" class="sm-button"><i class="fa-solid fa-phone sm-icon"></i></a>
+                    <!-- <a href="mailto:ovindu.atukorala@gmail.com"><i class="fa-solid fa-phone sm-icon"></i></a> -->
+                    <a href="mailto:ovindu.atukorala@gmail.com" class="button w-button">get in touch</a>
+                </div>
+            </div>
+
+            <div id="main-content" class="main-content">
+
+                <!-- introduction-section -->
+                <section id="section-introduction" data-w-id="1b0cb22c-a40c-8c3a-6705-cb18504c8691"
+                    class="section-introduction section">
+                    <div class="section_label">
+                        <div class="section-label_number">1</div>
+                        <div class="section_label_text">introduction</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>
+                                Hello! I am Ovindu Atukorala, <br />
+                            </h1>
+                        </div>
+                        <div class="margin-bottom margin-small">
+                            <p class="text-size-large">an undergraduate student with a deep-rooted passion for software engineering and business development. Feel free to explore my portfolio and let's connect for collaboration opportunities!</p>
+                        </div>
+                        <a href="#section-about" class="button o-button">more about me</a>
+                        <div class="protrait-mobile">
+                            <div id="w-node-_79863dfa-0391-136b-434a-f5894f34a96e-4f34a96e" class="protrait-wrapper">
+                                <img src="RU1_6666 copy.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 20vw"
+                                    srcset="RU1_6666 copy.jpg 500w, RU1_6666 copy.jpg 800w, RU1_6666 copy.jpg 1080w, RU1_6666 copy.jpg 1200w"
+                                    alt="" class="image" />
+                                <div class="protrait-background"></div>
+                            </div>
+                            <div class="porttrait-mobile_title">
+                                <a href="/" aria-current="page" class="navigation_logo o-nav-brand o--current">
+                                    <div class="heading-style-h5">Ovindu Atukorala</div>
+                                    <!-- <div>Business Developer</div> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- about-section -->
+                <section id="section-about" class="section-about section">
+                    <div class="section_label">
+                        <div class="section-label_number">2</div>
+                        <div class="section_label_text">about</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>About</h1>
+                        </div>
+                        <div class="margin-bottom margin-small">
+                            <p class="text-size-large">As a CIMA-qualified professional, I possess a solid foundation in finance, management accounting, and business strategy aiming to apply my analytical and problem-solving skills to develop innovative solutions. 
+                            </p>
+                            <p class="text-size-large">
+                                I am also a proficient programmer with a strong understanding of programming languages such as JavaScript, Python, HTML, and CSS, which will allow me to create software solutions that are efficient, user-friendly, and meet business needs. 
+                            </p>
+                            <!-- <p>
+                                Throughout my academic journey, I have held various leadership positions in school, including executive board member of several clubs and head prefect. These experiences have taught me the importance of teamwork, communication, and leadership, and I strive to apply these skills in both my academic and professional pursuits.
+                            </p> -->
+                            <p class="text-size-large">
+                                I am passionate about exploring new technologies and enjoy taking on challenging projects that allow me to stretch my creativity and problem-solving abilities. My dedication to innovation has led me to pursue various initiatives, including software development projects, startup ventures, and community service programs.
+                                
+                            </p>
+                            <!-- <p>
+                                Through this website, I hope to connect with fellow students, professionals, and entrepreneurs in the industry. Whether you are interested in discussing new technologies, exploring business opportunities, or simply connecting with like-minded individuals, I invite you to join me on this journey.
+                            </p> -->
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- qualification-section -->
+                <section id="section-qualifications" class="section-qualifications section">
+                    <div class="section_label">
+                        <div class="section-label_number">3</div>
+                        <div class="section_label_text">qualifications</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>My qualifications</h1>
+                        </div>
+                        <p>Due to my desire for continuous learning and self improvement I have achieved several educational and professional  qualifications. These achievements are a testament to my desire to stay up-to-date with the latest developments in my field. </p>
+                        <div class="qualification-category-wrapper w-dyn-list">
+                            <div role="list" class="qualification-category_list w-dyn-items">
+                                <div role="listitem" class="qualification-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Qualifications</h2>
+                                    </div>
+                                    <div class="qualification-list-wrapper w-dyn-list">
+                                        <div role="list" class="qualification-list w-dyn-items">
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="qualification-list-logo qualification-row-item">
+                                                    <img src="University_of_Moratuwa_logo.png" alt="">
+                                                </div>
+                                                <div class="qualification-list-description qualification-row-item">
+                                                    <div class="heading-style-h6">BSc-Eng Engineering (Reading)</div>
+                                                    <div>University of Moratuwa</div>
+                                                </div>
+
+                                            </div>
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="qualification-list-logo qualification-row-item">
+                                                    <img src="Cima_logo.png" alt="">
+                                                </div>
+                                                <div class="qualification-list-description qualification-row-item">
+                                                    <div class="heading-style-h6">CGMA exams completed</div>
+                                                    <div>Chartered Institute of Management Accountants</div>
+                                                </div>
+                                            </div>
+                                            <!-- <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Business Relations</div>
+                                                <div>Experienced</div>
+                                            </div>
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Finance</div>
+                                                <div>Expert</div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div role="listitem" class="qualification-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Toolset</h2>
+                                    </div>
+                                    <div class="qualification-list-wrapper w-dyn-list">
+                                        <div role="list" class="qualification-list w-dyn-items">
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Microsoft Excel</div>
+                                                <div>Excellent</div>
+                                            </div>
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Mircosoft Word</div>
+                                                <div>Outstanding</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="qualification-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Languages</h2>
+                                    </div>
+                                    <div class="qualification-list-wrapper w-dyn-list">
+                                        <div role="list" class="qualification-list w-dyn-items">
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">English</div>
+                                                <div>Native language</div>
+                                            </div>
+                                            <div role="listitem" class="qualification-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Spanish</div>
+                                                <div>Fluent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- experience-section -->
+                <section id="section-experience" class="section-experience section">
+                    <div class="section_label">
+                        <div class="section-label_number">4</div>
+                        <div class="section_label_text">experience</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>In my work I draw on a variety of experience I have obtained in various fields.</h1>
+                        </div>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p> -->
+                        <div class="work-history">
+                            <div class="work-history_list-wrapper w-dyn-list">
+                                <div role="list" class="work-history_list w-dyn-items">
+                                    <div role="listitem" class="work-history_list_item w-dyn-item">
+                                        <div id="work-history-dot" class="work-history_entry_dot">
+                                            <div id="work-history-dot-inner" class="work-history_entry_dot_inner"></div>
+                                        </div>
+                                        <div id="work-history-line" class="work-history_line-wrap">
+                                            <div class="work-history_line"></div>
+                                        </div>
+                                        <div id="work-history-content" class="work-history_entry_content">
+                                            <h1 class="heading-style-h5">Accountant</h1>
+                                            <div class="work-history_entry_content_subinfo">
+                                                <div class="work-history_entry_content_subinfo_date">
+                                                    <div>March 2023</div>
+                                                    <div>- </div>
+                                                    <div>Present</div>
+                                                </div>
+                                                <div>Blok and Dino Productions</div>
+                                            </div>
+                                            <div class="w-richtext">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse varius enim in eros elementum tristique. Duis
+                                                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                                    commodo diam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="work-history_list_item w-dyn-item">
+                                        <div id="work-history-dot" class="work-history_entry_dot">
+                                            <div id="work-history-dot-inner" class="work-history_entry_dot_inner"></div>
+                                        </div>
+                                        <div id="work-history-line" class="work-history_line-wrap">
+                                            <div class="work-history_line"></div>
+                                        </div>
+                                        <div id="work-history-content" class="work-history_entry_content">
+                                            <h1 class="heading-style-h5">Intern - Software Engineering</h1>
+                                            <div class="work-history_entry_content_subinfo">
+                                                <div class="work-history_entry_content_subinfo_date">
+                                                    <div>March 2022</div>
+                                                    <div>- </div>
+                                                    <div>March 2023</div>
+                                                </div>
+                                                <div>Inivos Technologies</div>
+                                            </div>
+                                            <div class="w-richtext">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse varius enim in eros elementum tristique. Duis
+                                                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                                    commodo diam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="work-history_list_item w-dyn-item">
+                                        <div id="w-node-_48528f9f-8df4-c29d-40d1-8fa338117456-eae0c1c9"
+                                            class="work-history_entry_dot">
+                                            <div id="work-history-dot-inner" class="work-history_entry_dot_inner"></div>
+                                        </div>
+                                        <div id="work-history-line" class="work-history_line-wrap">
+                                            <div class="work-history_line"></div>
+                                        </div>
+                                        <div id="work-history-content" class="work-history_entry_content">
+                                            <h1 class="heading-style-h5">Head Prefect</h1>
+                                            <div class="work-history_entry_content_subinfo">
+                                                <div class="work-history_entry_content_subinfo_date">
+                                                    <div>January 2021</div>
+                                                    <div>- </div>
+                                                    <div>April 2022</div>
+                                                </div>
+                                                <div>St. Peter's College</div>
+                                            </div>
+                                            <div class="w-richtext">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse varius enim in eros elementum tristique. Duis
+                                                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                                    commodo diam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="work-history_list_item w-dyn-item">
+                                        <div id="w-node-_48528f9f-8df4-c29d-40d1-8fa338117456-eae0c1c9"
+                                            class="work-history_entry_dot">
+                                            <div id="work-history-dot-inner" class="work-history_entry_dot_inner"></div>
+                                        </div>
+                                        <div id="work-history-line" class="work-history_line-wrap">
+                                            <div class="work-history_line"></div>
+                                        </div>
+                                        <div id="work-history-content" class="work-history_entry_content">
+                                            <h1 class="heading-style-h5">Head Prefect</h1>
+                                            <div class="work-history_entry_content_subinfo">
+                                                <div class="work-history_entry_content_subinfo_date">
+                                                    <div>January 2021</div>
+                                                    <div>- </div>
+                                                    <div>April 2022</div>
+                                                </div>
+                                                <div>St. Peter's College</div>
+                                            </div>
+                                            <div class="w-richtext">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Suspendisse varius enim in eros elementum tristique. Duis
+                                                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                                    commodo diam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-history-line"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- honours-section -->
+                <section id="section-honours" class="section-honours section">
+                    <div class="section_label">
+                        <div class="section-label_number">3</div>
+                        <div class="section_label_text">honours</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>My achievements</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                        <div class="honours-category-wrapper w-dyn-list">
+                            <div role="list" class="honours-category_list w-dyn-items">
+                                <div role="listitem" class="honours-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Skillset</h2>
+                                    </div>
+                                    <div class="honours-list-wrapper w-dyn-list">
+                                        <div role="list" class="honours-list w-dyn-items">
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="honours-list-logo honours-row-item">
+                                                    <div class="heading-style-h5">
+                                                        Peterite Gold
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="honours-list-logo honours-row-item">
+                                                    <div class="heading-style-h5">
+                                                        Best Allround student 2022
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Business Relations</div>
+                                                <div>Experienced</div>
+                                            </div>
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Finance</div>
+                                                <div>Expert</div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div role="listitem" class="honours-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Toolset</h2>
+                                    </div>
+                                    <div class="honours-list-wrapper w-dyn-list">
+                                        <div role="list" class="honours-list w-dyn-items">
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Microsoft Excel</div>
+                                                <div>Excellent</div>
+                                            </div>
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Mircosoft Word</div>
+                                                <div>Outstanding</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="honours-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Languages</h2>
+                                    </div>
+                                    <div class="honours-list-wrapper w-dyn-list">
+                                        <div role="list" class="honours-list w-dyn-items">
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">English</div>
+                                                <div>Native language</div>
+                                            </div>
+                                            <div role="listitem" class="honours-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Spanish</div>
+                                                <div>Fluent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- featured-section -->
+                <section id="section-featured" class="section-featured section">
+                    <div class="section_label">
+                        <div class="section-label_number">3</div>
+                        <div class="section_label_text">featured</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>My featured</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                        <div class="featured-category-wrapper w-dyn-list">
+                            <div role="list" class="featured-category_list w-dyn-items">
+                                <div role="listitem" class="featured-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Skillset</h2>
+                                    </div>
+                                    <div class="featured-list-wrapper w-dyn-list">
+                                        <div role="list" class="featured-list w-dyn-items">
+                                            <a href="https://lmd.lk/youth-forum-59/">
+                                                <div role="listitem" class="featured-list_item w-dyn-item">
+                                                    <div class="heading-style-h5">
+                                                        LMD Youth Magazine -
+                                                        Recalibrating the nation
+
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.dailynews.lk/2022/02/15/tc/272566/empowering-change">
+                                                <div role="listitem" class="featured-list_item w-dyn-item">
+
+                                                    <div class="heading-style-h5">
+                                                        Daily news -
+                                                        Empowering Change
+                                                    </div>
+
+                                                </div>
+                                            </a>
+                                            <a
+                                                href="https://www.sundaytimes.lk/230212/education/st-peters-college-prize-giving-2022-511276.html">
+
+                                                <div role="listitem" class="featured-list_item w-dyn-item">
+                                                    <div class="heading-style-h5">
+                                                        Sunday Times - Peterite Excellence
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Business Relations</div>
+                                                <div>Experienced</div>
+                                            </div>
+                                            <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Finance</div>
+                                                <div>Expert</div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div role="listitem" class="featured-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Toolset</h2>
+                                    </div>
+                                    <div class="featured-list-wrapper w-dyn-list">
+                                        <div role="list" class="featured-list w-dyn-items">
+                                            <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Microsoft Excel</div>
+                                                <div>Excellent</div>
+                                            </div>
+                                            <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Mircosoft Word</div>
+                                                <div>Outstanding</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="featured-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Languages</h2>
+                                    </div>
+                                    <div class="featured-list-wrapper w-dyn-list">
+                                        <div role="list" class="featured-list w-dyn-items">
+                                            <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">English</div>
+                                                <div>Native language</div>
+                                            </div>
+                                            <div role="listitem" class="featured-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Spanish</div>
+                                                <div>Fluent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- skills-section -->
+                <section id="section-skills" class="section-skills section">
+                    <div class="section_label">
+                        <div class="section-label_number">5</div>
+                        <div class="section_label_text">Skills</div>
+                        <div class="section-label_line"></div>
+                    </div>
+                    <div class="section_content">
+                        <div class="margin-bottom margin-small">
+                            <h1>My Skills</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat.</p>
+                        <div class="skill-category-wrapper w-dyn-list">
+                            <div role="list" class="skill-category_list w-dyn-items">
+                                <div role="listitem" class="skill-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Skillset</h2>
+                                    </div>
+                                    <div class="skill-list-wrapper w-dyn-list">
+                                        <div role="list" class="skill-list w-dyn-items">
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">SEO</div>
+                                                <div>Excellent</div>
+                                            </div>
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Marketing</div>
+                                                <div>Professional</div>
+                                            </div>
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Business Relations</div>
+                                                <div>Experienced</div>
+                                            </div>
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Finance</div>
+                                                <div>Expert</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="skill-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Toolset</h2>
+                                    </div>
+                                    <div class="skill-list-wrapper w-dyn-list">
+                                        <div role="list" class="skill-list w-dyn-items">
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Microsoft Excel</div>
+                                                <div>Excellent</div>
+                                            </div>
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Mircosoft Word</div>
+                                                <div>Outstanding</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="listitem" class="skill-category_list_item w-dyn-item">
+                                    <div class="margin-top margin-medium">
+                                        <h2 class="heading-style-h5">Languages</h2>
+                                    </div>
+                                    <div class="skill-list-wrapper w-dyn-list">
+                                        <div role="list" class="skill-list w-dyn-items">
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">English</div>
+                                                <div>Native language</div>
+                                            </div>
+                                            <div role="listitem" class="skill-list_item w-dyn-item">
+                                                <div class="heading-style-h6">Spanish</div>
+                                                <div>Fluent</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/ba0cdb9fe2.js" crossorigin="anonymous"></script>
+
+</html>
