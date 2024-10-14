@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        // Redirect all 404 errors to index.html
+        var redirectTo = '/index.html';
+        window.location.href = redirectTo + window.location.search + window.location.hash;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a href="/index.html">link</a>.</p>
+</body>
+</html>
